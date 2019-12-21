@@ -11,7 +11,7 @@ import com.example.wt.repo.WeatherAPIRepo;
 import com.example.wt.service.WeatherAnalyzerService;
 
 @RestController
-@RequestMapping("/api/latest")
+@RequestMapping("/api/weather")
 public class WeatherAPIController {
 
 	@Autowired
@@ -19,14 +19,14 @@ public class WeatherAPIController {
 
 	@RequestMapping("/status")
 	public String status() {
-		return "Weather forcast working fine!";
+		return "Weather forcast API working fine!";
 	}
 
-	@RequestMapping(value = "/forecast/{country}")
+	@RequestMapping(value = "/forecast/{city}")
 	@CrossOrigin
-	public  String forcast(@PathVariable("country") String country) throws Exception {
+	public  String forcast(@PathVariable("city") String city) throws Exception {
 		
-		return weatherAnalyzerService.getWeatherAnalysis(country);
+		return weatherAnalyzerService.getWeatherAnalysis(city);
 	}
 		
 }

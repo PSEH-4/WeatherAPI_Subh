@@ -3,5 +3,5 @@
  
  Sample URLs
  
- http://localhost:8080/api/latest/forecast/dublin
- http://localhost:8080/api/latest/forecast/delhi
+ http://localhost:8080/api/weather/forecast/dublin
+ http://localhost:8080/api/weather/forecast/delhi
