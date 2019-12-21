@@ -21,7 +21,7 @@ public class WeatherAnalyzer {
 					return "Carry Umberella";
 			}
 		}
-		return "mid Temp";
+		return "Normal Weather!!";
 	
 	}
 

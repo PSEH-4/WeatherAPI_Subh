@@ -1,4 +1,4 @@
-package com.world.weather;
+package com.example.wt;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -12,5 +12,6 @@ public class DemoApplicationTests {
 	//@Test
 	public void contextLoads() {
 	}
-
+	
+	
 }
